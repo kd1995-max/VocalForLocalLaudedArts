@@ -1,0 +1,226 @@
+<%- include('header.ejs')%>
+<title>LaudedArts</title>    
+</head>
+
+<body class="image">
+
+    <div class="container-fluid image">
+
+        <nav class="navbar navbar-expand-lg  navbar-light">
+
+            <div class="navbar-header">
+                <h2><a class="navbar-brand ml-3 font-weight-bolder" href="/Template/index"><strong class="text-white h3">ℒᾰΰḏἓḓ ἎԻ†Š</strong></a></i>
+                </h2>
+
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  float-right" id="navbar">
+                <ul class="navbar-nav float-right  ml-auto h5">
+                    <li class="nav-item ">
+                        <a class="nav-link text-dark float-right px-3" href="/Template/index">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark float-right px-3" href="/Template/gallery">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark float-right px-3" href="/Template/contact">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark float-right px-3" href="/Template/login">login</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        &nbsp;
+        <br><br>
+        <div class="container-fluid pt-5">
+            
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <h1 class="text-center text-white" style='font-family: "Sofia", sans-serif;'><span class="bg-danger">Sound that your audience</span> <br> <span class="bg-danger">will never forget.
+                    </span></h1>
+                    <p class="text-center text-dark"> Handcrafting immersive audio that will transport <br> your viewer to another world.
+                    </p>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    
+    <section class="contaienr-fluid bg-light p-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1 style='font-family: "Trirong", sans-serif;'>Our top picks</h1>
+                </div>
+            </div>
+
+            <div class="row mx-5 mt-3">
+            
+                
+                <a href="#" class="col-md-3  nounderline text-dark col-sm-6 text-center pointer h4 text-wrap text-break round"> 
+                    
+                    <div class="card hover-border">
+                        <img class="card-img-top" height="170px" src="/image/gujrat.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Gujrati</h5>
+                            </div>
+                    </div>
+                
+                
+                </a>
+                <a href="#" class="col-md-3  nounderline text-dark col-sm-6 text-center pointer h4 text-wrap text-break round"> 
+                    
+                    <div class="card hover-border">
+                        <img class="card-img-top" height="170px" src="/image/jaipur.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Jaipuriya</h5>
+                            </div>
+                    </div>
+                
+                
+                </a>
+                <a href="{% url 'book_search' cards.id %}" class="col-md-3  nounderline text-dark col-sm-6 text-center pointer h4 text-wrap text-break round"> 
+                    
+                    <div class="card hover-border">
+                        <img class="card-img-top" height="170px" src="/image/madhubani.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Madhubani</h5>
+                            </div>
+                    </div>
+                
+                
+                </a>
+                <a href="{% url 'book_search' cards.id %}" class="col-md-3  nounderline text-dark col-sm-6 text-center pointer h4 text-wrap text-break round"> 
+                    
+                    <div class="card hover-border">
+                        <img class="card-img-top" height="170px" src="/image/keral.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Kerala Mural</h5>
+                            </div>
+                    </div>
+                
+                
+                </a>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+    
+        <section class="d-flex justify-content-between">
+ 
+
+ <!-- Right -->
+</section>
+
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="fw-bold"><strong class="text-white h3">ℒᾰΰḏἓḓ ἎԻ†Š</strong></h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              Our company provides the quality of handcrafted painting from different different states from different different artist.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white">Gujrati</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Jaipuriya</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Madhubani</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Kerala Mural</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white">Your Account</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Become Seller</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p><i class="fas fa-home mr-3"></i> PG Hostel, 10,6 , MNNIT Allahabad</p>
+            <p><i class="fas fa-envelope mr-3"></i> abc@example.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +91 7301089844</p>
+            
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2022 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >LaudedArts</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+    <script href="/js/javascript.js"></script>
+</body>
+
+</html>
